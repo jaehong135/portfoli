@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url(reset.css);
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Pretendard-ExtraLight';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Pretendard-Black';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+body {width: 100%;height: 100vh; background: linear-gradient(118deg, #D6D7DA 15.22%, #727274 295.69%);overflow: hidden;}
+body.about {background: none;background: url(../images/about/about.jpg);}
+body.banner {background: #020101;overflow: visible;}
+body.webdesign {background: none;}
+
+
+img{max-width: 100%;}
+header {display: flex;justify-content: space-between; margin:83px 100px 0 100px ;align-items: center;}
+nav ul{display: flex;}
+nav ul li{padding: 0 20px;}
+nav ul li a{padding: 12px 40px;background: #020202;border-radius: 200px;font-size: 20px;display: flex;color: #F8F8F8;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;}
+nav ul li a:hover {background: #1a2a40;}
+main{display: flex;justify-content: center;margin-top: 180px;color: #f8f8f8;}
+main .typo{display: flex;flex-direction: column;align-items: center;position: relative;}
+main figcaption {padding-top: 15px;padding-bottom: 58px;color: #515960;}
+main .typo .view_btn {padding: 23px 137px;background: #7F8891;color: #f8f8f8;border-radius: 200px;}
+main .mu {position: absolute;right: -50%;top: -20%;}
+
+/* about */
+header h1.bg_w {filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(97%) contrast(103%);
+}
+header figure.hong {filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(97%) contrast(103%);}
+
+/* banner */
+main.banner {display: flex;flex-direction: column;justify-content: center;align-items: center;}
+main.banner h2 {margin-bottom: 120px;color: #FAFAFA;
+    font-family: "Noto Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;}
+
+/* webdesign */
+header.web {position: relative;z-index: 2;}
+
+.swiper {
+    position: absolute !important;top: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .swiper-slide .content{
+    margin: 192px 200px 0px;
+    font-size: 18px;
+    display: flex;
+    gap: 4.16vw;
+  }
+  .swiper-slide .content .info{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .swiper-slide.mail_bg {background: url(../images/section/bg1.jpg) no-repeat center center;width: 100%;height: 100vh;overflow: hidden;}
+  .swiper-slide.bang_bg {background: url(../images/section/bg2.jpg) no-repeat center center;width: 100%;height: 100vh;overflow: hidden;}
+  .swiper-slide.ncu_bg {background: url(../images/section/bg3.png) no-repeat center center;width: 100%;height: 100vh;overflow: hidden;}
+  .swiper-slide.hil_bg {background: url(../images/section/bg4.png) no-repeat center center;width: 100%;height: 100vh;overflow: hidden;}
+  .swiper-slide.kit_bg {background: url(../images/section/bg5.png) no-repeat center center;width: 100%;height: 100vh;overflow: hidden;}
+
+  .swiper-button-next:after,.swiper-button-prev:after{font-size: 32px !important;font-weight: 600;color: #fff;}
+  .swiper-button-next{right: 3% !important;}
+  .swiper-button-prev {left: 3% !important;}
+  
+  .swiper-slide .content .info {color: #fff;}
+  .swiper-slide .content .info h2.mail {padding-bottom: 24px;
+    color: #2274CE;
+    font-family: "Noto Sans KR";
+    font-size: clamp(32px,2.4vw,48px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #2274ce;
+    line-height: 1.2;
+}
+  .swiper-slide .content .info .sub {padding-bottom: 12px;color: #FFF;
+    font-family: "Noto Sans KR";
+    font-size: clamp(20px,1.5vw,24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: capitalize;}
+  .swiper-slide .content .info .dip{padding-bottom: 24px;color: #E5E5E5;
+    font-family: "Noto Sans KR";
+    font-size: clamp(16px,1vw,20px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%; /* 25.2px */}
+  .swiper-slide .content .info .tool{display: flex;width: fit-content; padding-bottom: 24px;color: #E5E5E5;
+    font-family: "Noto Sans KR";
+    font-size: clamp(16px,1vw,20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */}
+  .swiper-slide .content .info .tool figure{padding-left: 12px;}
+  .swiper-slide .content .info .tool figure > img {width: 24px;}
+  .swiper-slide .content .info .tool figure > img:last-child{padding-left: 4px;}
+  .swiper-slide .content .info .gi{
+    color: #EEE;
+    font-family: "Noto Sans KR";
+    font-size: clamp(16px,1vw,20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+  .swiper-slide .content .info .gan{padding-bottom: 36px;color: #EEE;
+    font-family: "Noto Sans KR";
+    font-size: clamp(16px,1vw,20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+  .swiper-slide .content .info .gi > span,
+  .swiper-slide .content .info .gan > span{color: #ff0004;padding-left: 12px;}
+  .swiper-slide .content .info a {padding: 20px 24px;border-radius: 12px;
+    background: linear-gradient(223deg, #0371E6 -0.09%, #001775 249.46%); width: fit-content;display: flex;align-items: center;color: #f8f8f8;
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;}
+    .swiper-slide .content .info > a > img {padding-left: 80px;}
+
+
+
+
+
+  .swiper-slide .content .view {text-align: center;position: relative;}
+  .swiper-slide .content .pc_view{overflow: hidden; max-width: 768px; height: 22vw; border-radius: 20px; filter: drop-shadow(8px 8px 30px rgba(0, 0, 0, 0.2))};
+
+
+  .swiper-slide .content .pc_view img {object-fit: cover;}
+  .swiper-slide .content .view figcaption {text-align: center;margin-bottom: 42px;color: #2274CE;
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;}
+    .swiper-slide .content .view figcaption span {color: #021B37;
+        font-family: "Noto Sans KR";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;}
+
+
+  .swiper-slide .content .view .mobile_view{width: 8.5vw; height: 16.9vw;overflow: hidden;border: 3px solid #000; border-radius: 20px; position: absolute; right: 20px;bottom: -1%;box-sizing: border-box;}
+
+  .swiper-slide .content .view .pen {position: absolute;right: -20px;bottom: 0;}
+
+
+  .swiper-slide .content .info h2.bang {color: #AC633F;}
+  .swiper-slide .content .info a.bang_a {background: linear-gradient(223deg, #B47B52 -0.09%, #391805 249.46%);}
+  .swiper-slide .content .view figcaption.bang_cap {color: #341E13;}
+
+  
+  .swiper-slide .content .info h2.ncu {color: #1CAB9E;}
+  .swiper-slide .content .info a.ncu_a {background: linear-gradient(223deg, #1CAB9E -0.09%, #0A3C37 249.46%);}
+  .swiper-slide .content .view figcaption.n_cap {color: #083430;}
+
+  .swiper-slide .content .info h2.hil {color: #738A3F;}
+  .swiper-slide .content .info a.hil_a {background: linear-gradient(223deg, #738A3F -0.09%, #4E611E 249.46%);}
+  .swiper-slide .content .view figcaption.hil_cap {color: #222A13;}
+
+  .swiper-slide .content .info h2.kit {color: #BE252A;}
+  .swiper-slide .content .info a.kit_a {background: linear-gradient(223deg, #BE252A -0.09%, #3D0B0C 249.46%);}
+  .swiper-slide .content .view figcaption.kit_cap {color:  #FFEAED;}
+
+
