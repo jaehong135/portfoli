@@ -167,7 +167,7 @@ header.web {position: relative;z-index: 2;}
     font-style: normal;
     font-weight: 400;
     line-height: normal;}
-  .swiper-slide .content .info .gan{padding-bottom: 36px;color: #EEE;
+  .swiper-slide .content .info .gan{padding-bottom: 18px;color: #EEE;
     font-family: "Noto Sans KR";
     font-size: clamp(16px,1vw,20px);
     font-style: normal;
@@ -227,5 +227,8 @@ header.web {position: relative;z-index: 2;}
   .swiper-slide .content .info h2.kit {color: #BE252A;}
   .swiper-slide .content .info a.kit_a {background: linear-gradient(223deg, #BE252A -0.09%, #3D0B0C 249.46%);}
   .swiper-slide .content .view figcaption.kit_cap {color:  #FFEAED;}
-
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom,.swiper-pagination-fraction {
+  left: 50% !important;
+  width: fit-content !important;
+}
 
